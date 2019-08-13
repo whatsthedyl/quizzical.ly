@@ -1,0 +1,197 @@
+@font-face {
+  font-family: montserratSemiBold;
+  src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: montserratLight;
+  src: url('./fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: robotoThin;
+  src: url('./fonts/Roboto-Thin.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #f9f9f9;
+}
+
+body, button, h3, .navRow button:hover, .editBtn:hover {
+  background-color: #f9f9f9;
+}
+
+#purpleBar, svg, .optionBtn, .qnIndexStatus, .actionBtn {
+  display: block;
+}
+
+.iconBtn, .navRow button, .editBtn, .qnStatus {
+  display: inline-block;
+}
+
+h1, h2, .btnRow, .navRow, .qnStatus {
+  text-align: center;
+}
+
+.iconBtn:hover, .navRow button, .optionBtn:hover, .editBtn:hover, .actionBtn:hover {
+  cursor: pointer;
+}
+
+.navRow, .optionBtn, .qnStatus {
+  width: 50%;
+}
+
+body, button, h3 {
+  font-family: montserratLight;
+}
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  color: #333;
+  display: flex;
+}
+
+#purpleBar {
+  background-color: #7900cf;
+  width: 100vw;
+  height: .4em;
+  position: absolute;
+  align-self: flex-start;
+}
+
+#root {
+  margin: auto;
+  width: 70%;
+}
+
+h1, h2 {
+  font-family: montserratSemiBold;
+  margin-bottom: .5em;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+  margin: .5em 0 1em 0;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+  margin-bottom: .25em;
+}
+
+span {
+  display: inline;
+}
+
+span, p {
+  font-size: 1.25em;
+}
+
+svg {
+ margin: 0 auto 1em auto;
+ width: 3em;
+}
+
+.iconBtn {
+ border: .1em solid #f9f9f9;
+ height: 9em;
+ width: 9em;
+}
+
+.iconBtn:hover {
+  color: #4c0099;
+}
+
+.iconBtn:hover svg {
+  fill: #4c0099;
+}
+
+.navRow {
+  margin: 0 auto;
+}
+
+.editBtn svg {
+  width: 2.5em;
+}
+
+.navRow button {
+  width: 25%;
+  margin-top: 1em;
+}
+
+.navRow button svg {
+  fill: #999;
+  width: 2.5em;
+}
+
+.navRow .enabledNavBtn svg, .editBtn svg {
+  fill: #777;
+}
+
+.enabledNavBtn:hover svg, .editBtn:hover svg, svg {
+  fill: #333;
+}
+
+.navRow button:last-of-type {
+  float: right;
+}
+
+.optionBtn {
+  margin: 1em auto;
+}
+
+.optionBtn, .actionBtn {
+  border: .1em solid #ccc;
+  border-radius: .5em;
+  min-height: 1em;
+  padding: 1em;
+}
+
+.optionBtn:hover, .actionBtn:hover {
+  background-color: #4c0099;
+  border: .1em solid #4c0099;
+  color: #f9f9f9;
+}
+
+.iconBtn, .optionBtn {
+  font-size: 1.5em;
+}
+
+.editBtn {
+  margin: 0 0 0 1em;;
+}
+
+.editBtn + h3, p + h3 {
+  margin-top: 1em;
+}
+
+.actionBtn {
+  margin: 2em auto 0 auto;
+  height: 3.25em;
+  width: 20%;
+  font-size: 1em;
+}
+
+.qnStatus {
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+.categoryStatus {
+  font-size: .95em;
+  line-height: 1.5em;
+}
+
+.qnIndexStatus, .categoryStatus {
+  font-family: robotoThin;
+  letter-spacing: .25em;
+}
